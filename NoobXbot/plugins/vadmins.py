@@ -7,7 +7,7 @@ from pyrogram.types import (
 )
 
 from NoobXbot import app
-from NoobXbot.config import call_py
+from NoobXbot.config import 
 from NoobXbot.NoobXUtilities.helpers.decorators import authorized_users_only
 from NoobXbot.NoobXUtilities.helpers.filters import command
 from NoobXbot.NoobXUtilities.tgcallsrun.queues import QUEUE, clear_queue
