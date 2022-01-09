@@ -39,7 +39,7 @@ from NoobXbot.NoobXUtilities.database.blacklistchat import (
     blacklist_chat,
     whitelist_chat,
 )
-from NoobXbot.NoobXUtilities.database.gbanned import (
+from NoobXbot.NoobXUtilities.database.gban import (
     get_gbans_count,
     is_gbanned_user,
     add_gban_user,
