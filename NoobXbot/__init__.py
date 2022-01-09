@@ -8,6 +8,8 @@ from aiohttp import ClientSession
 from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
 from pyrogram import Client
 from pyrogram import Client as Bot
+from pymongo import MongoClient 
+from pymongo.errors import ConnectionFailure
 
 from NoobXbot import config
 from NoobXbot.config import (
