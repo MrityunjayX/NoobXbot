@@ -2,7 +2,7 @@ import asyncio
 
 from NoobXbot import BOT_ID, OWNER, app
 from NoobXbot.NoobXUtilities.database.chats import get_served_chats
-from NoobXbot.NoobXUtilities.database.gbanned import (
+from NoobXbot.NoobXUtilities.database.gban import (
     add_gban_user,
     is_gbanned_user,
     remove_gban_user,
