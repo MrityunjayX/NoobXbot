@@ -78,5 +78,5 @@ elif query.data == "purge":
 
 
 
-            parse_mode='html'
+
 
