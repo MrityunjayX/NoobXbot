@@ -15,7 +15,7 @@ from pyrogram import __version__ as pyrover
 from pyrogram import filters
 from pyrogram.types import Message
 
-from NoobXbot import (BOT_ID, SUDOERS, app, boottime, pymongodb,
+from NoobXbot import (BOT_ID, SUDOERS, app, pymongodb,
                    userbot)
 from NoobXbot.Database import get_gbans_count, get_served_chats, get_sudoers
 from NoobXbot.Inline import (stats1, stats2, stats3, stats4, stats5, stats6,
