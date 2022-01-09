@@ -23,14 +23,13 @@ from NoobXbot.Inline import (stats1, stats2, stats3, stats4, stats5, stats6,
 from NoobXbot.plugins import ALL_MODULES
 from NoobXbot.utilities.ping import get_readable_time
 
-__MODULE__ = "Stats"
-__HELP__ = """
 
 
-/stats 
-- Check the Stats of Bot.
-- Gets the stat of MongoDb , Assistant, System etc
-"""
+
+
+
+
+
 
 
 async def bot_sys_stats():
