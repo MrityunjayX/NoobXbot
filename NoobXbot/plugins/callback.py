@@ -41,7 +41,7 @@ from NoobXbot.NoobXUtilities.noobxruns import (music, convert, download, clear, 
 from NoobXbot.NoobXUtilities.database.queue import (is_active_chat, add_active_chat, remove_active_chat, music_on, is_music_playing, music_off)
 from NoobXbot.NoobXUtilities.database.onoff import (is_on_off, add_on, add_off)
 from NoobXbot.NoobXUtilities.database.blacklistchat import (blacklisted_chats, blacklist_chat, whitelist_chat)
-from NoobXbot.NoobXUtilities.database.gbanned import (get_gbans_count, is_gbanned_user, add_gban_user, add_gban_user)
+from NoobXbot.NoobXUtilities.database.gban import (get_gbans_count, is_gbanned_user, add_gban_user, add_gban_user)
 from NoobXbot.NoobXUtilities.database.theme import (_get_theme, get_theme, save_theme)
 from NoobXbot.NoobXUtilities.database.assistant import (_get_assistant, get_assistant, save_assistant)
 from NoobXbot.config import DURATION_LIMIT, ASS_ID
