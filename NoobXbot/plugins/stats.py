@@ -21,7 +21,7 @@ from NoobXbot.Database import get_gbans_count, get_served_chats, get_sudoers
 from NoobXbot.Inline import (stats1, stats2, stats3, stats4, stats5, stats6,
                           stats7)
 from NoobXbot.plugins import ALL_MODULES
-from NoobXbot.plugins.ping import get_readable_time
+from NoobXbot.utilities.ping import get_readable_time
 
 __MODULE__ = "Stats"
 __HELP__ = """
