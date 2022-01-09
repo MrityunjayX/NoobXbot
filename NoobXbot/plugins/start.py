@@ -31,7 +31,7 @@ def start_pannel():
         ],
         [
             InlineKeyboardButton("🔥OWNER🔥", url=f"https://t.me/userderdead"),
-            InlineKeyboardButton("🔥Commands", url=f"https://telegra.ph/Commands-12-20"),
+            InlineKeyboardButton("🔥Commands", callback_data="help"),
         ],
     ]
     return (
