@@ -31,7 +31,7 @@ def start_pannel():
         ],
         [
             InlineKeyboardButton("🔥OWNER🔥", url=f"https://t.me/userderdead"),
-            InlineKeyboardButton("🔥Commands", callback_data="help"),
+            InlineKeyboardButton("Start me", url=f"https://t.me/NoobXRobot?start=true"),
         ],
     ]
     return (
@@ -101,9 +101,9 @@ async def start(_, message: Message):
     await message.reply_text(
         f"""
 Here {message.chat.title}.
-Thanks Of Using.
+Thanks of adding me here♥️.
 
-For assistance please click the button below.
+For start me tap below start button.
 """,
         reply_markup=InlineKeyboardMarkup(out[1]),
         disable_web_page_preview=True
@@ -124,7 +124,7 @@ async def play(_, message: Message):
 
 💬 [{BOT_NAME}](t.me/{BOT_USERNAME}) Simple Music Player Bot Telegram!
 
-💡 Helper Commands » 📚 https://telegra.ph/Commands-12-20 !**
+💡 Helper Commands » 📚 /play *Song name* /skip *Skip the current song* /end *For stop the song* !**
 
 """,
             parse_mode="markdown",
