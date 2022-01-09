@@ -5,7 +5,7 @@ import asyncio
 from pyrogram import Client, filters
 
 from NoobXbot.helper_functions.admin_check import admin_check
-from NoobXbot.helper_functions.cust_p_filters import 
+from NoobXbot.helper_functions.cust_p_filters import f_own_filter
 
 TG_MAX_SELECT_LEN = 100
 
