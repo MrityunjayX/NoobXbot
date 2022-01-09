@@ -60,7 +60,7 @@ idle()
 loop.close()
 
 print("[LOG] CLOSING BOT")
-elif query.data == "purge":
+
 
 
 
