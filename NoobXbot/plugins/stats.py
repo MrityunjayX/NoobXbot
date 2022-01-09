@@ -5,7 +5,7 @@ from sys import version as pyver
 import psutil
 from NoobXbot import Music_START_TIME, app, SUDOERS
 from NoobXbot.NoobXUtilities.database.chats import get_served_chats
-from NoobXbot.NoobXUtilities.database.gbanned import get_gbans_count
+from NoobXbot.NoobXUtilities.database.gban import get_gbans_count
 from NoobXbot.NoobXUtilities.database.sudo import get_sudoers
 from NoobXbot.NoobXUtilities.helpers.time import get_readable_time
 from pyrogram import __version__ as pyrover
