@@ -34,7 +34,23 @@ def start_pannel():
             InlineKeyboardButton("Start me", url=f"https://t.me/NoobXRobot?start=true"),
         ],
     ]
-    return (
+   
+
+
+else:
+
+        update.effective_message.reply_text(
+
+            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+
+                uptime,
+
+            ),
+
+            parse_mode=ParseMode.HTML,
+
+        )
+        return (
         "🎛 **{BOT_NAME} I'm NoobXbot**",
         buttons,
     )
@@ -57,12 +73,12 @@ pstart_markup = InlineKeyboardMarkup(
     ]
 )
      
-    elif query.data == "start":
-         query.message.edit_text(
-             text=f"My all commands"
-             "n\Try this commands in your group /play songnamme /end for stop allsongs /skip for skip songs."
-             parse_mode=ParseMode.MARKDOWN.
-             desable_web_page_preview=True,
+
+
+  
+        
+       
+         
           
 welcome_captcha_group = 2
 
