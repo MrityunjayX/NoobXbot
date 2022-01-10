@@ -52,12 +52,12 @@ pstart_markup = InlineKeyboardMarkup(
         ],
         [
             InlineKeyboardButton("🔥 Commands", url=f"https://telegra.ph/Commands-12-20"),
-            InlineKeyboardButton(text="ℹ️ Help", callback_data="NoobX_help"),
+            InlineKeyboardButton(text="ℹ️ Help", callback_data="fhelp@{BOT_USERNAME}"),
         ],
     ]
 )
      
-    elif query.data == "NoobX_help":
+    elif query.data == "{BOT_USERNAME}":
          query.message.edit_text(
              text=f"My all commands"
              "n\Try this commands in your group /play songnamme /end for stop allsongs /skip for skip songs."
