@@ -57,7 +57,7 @@ pstart_markup = InlineKeyboardMarkup(
     ]
 )
      
-    elif query.data == "help":
+    elif query.data == "fhelp@{BOT_USERNAME}":
          query.message.edit_text(
              text=f"My all commands"
              "n\Try this commands in your group /play songnamme /end for stop allsongs /skip for skip songs."
