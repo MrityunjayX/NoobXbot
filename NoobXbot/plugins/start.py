@@ -52,9 +52,18 @@ pstart_markup = InlineKeyboardMarkup(
         ],
         [
             InlineKeyboardButton("🔥 Commands", url=f"https://telegra.ph/Commands-12-20"),
+            InlineKeyboardButton(text="ℹ️ Help", callback_data="NoobX_help"),
         ],
     ]
 )
+     
+elif query.data =="NoobX_help":
+     query.message.edit_text(
+          text=f"My all commands"
+          "n\Try this commands in your group /play songnamme /end for stop allsongs /skip for skip songs."
+          parse_mode=ParseMode.MARKDOWN.
+          desable_web_page_preview=True,
+          
 welcome_captcha_group = 2
 
 
