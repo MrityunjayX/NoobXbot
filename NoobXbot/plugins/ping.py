@@ -13,10 +13,10 @@ async def bot_sys_stats():
     mem = psutil.virtual_memory().percent
     disk = psutil.disk_usage("/").percent
     stats = f"""
-Woke Up Since: {get_readable_time((bot_uptime))}
-CPU: {cpu}%
-RAM: {mem}%
-Disk: {disk}%
+𝚆𝚘𝚔𝚎 𝚄𝚙 𝚂𝚒𝚗𝚌𝚎: {get_readable_time((bot_uptime))}
+𝙲𝚙𝚞: {cpu}%
+𝚁𝚊𝚖: {mem}%
+𝙳𝚒𝚜𝚔: {disk}%
 """
     return stats
 
@@ -29,5 +29,5 @@ async def ping(_, message):
     end = datetime.now()
     resp = (end - start).microseconds / 1000
     await response.edit(
-        f"**Pong!**\n`⚡{resp} ms`\n\n<b><u>Alive Results:</u></b>{uptime}"
+        f"**𝙿𝚘𝚗𝚐!**\n`🎵{resp} ms`\n\n<b><u>𝙰𝚕𝚒𝚟𝚎 𝚁𝚎𝚜𝚞𝚕𝚝𝚜:</u></b>{uptime}"
     )
