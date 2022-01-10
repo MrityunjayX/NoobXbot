@@ -57,7 +57,7 @@ pstart_markup = InlineKeyboardMarkup(
     ]
 )
      
-    elif query.data == "{BOT_USERNAME}":
+    elif query.data == "help":
          query.message.edit_text(
              text=f"My all commands"
              "n\Try this commands in your group /play songnamme /end for stop allsongs /skip for skip songs."
@@ -74,11 +74,11 @@ async def welcome(_, message: Message):
         try:
             if member.id in OWNER:
                 return await message.reply_text(
-                    f"💡 Owner Bot [{member.mention}] Boom boom owner."
+                    f"🔥 Akku Arrived Stay Alert [{member.mention}] Hello Master ♥️."
                 )
             if member.id in SUDOERS:
                 return await message.reply_text(
-                    f"💡 Admin Bot [{member.mention}] Boom boom sudo."
+                    f"✨ Sudo User Arrived [{member.mention}] Hello Demon 👿."
                 )
             if member.id == ASSID:
                 await remove_active_chat(chat_id)
@@ -129,9 +129,9 @@ async def play(_, message: Message):
         await app.send_message(
             message.chat.id,
             text=f"""
-**✨ Welcome {rpk}!
+**🔥 Welcome Dude {rpk}!
 
-💬 [{BOT_NAME}](t.me/{BOT_USERNAME}) Simple Music Player Bot Telegram!
+💬 [{BOT_NAME}](t.me/{BOT_USERNAME}) Simple Music Player Telegram Bot!
 
 💡 Helper Commands » 📚 /play *Song name* /skip *Skip the current song* /end *For stop the song* !**
 
