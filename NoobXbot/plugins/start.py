@@ -26,11 +26,11 @@ from pyrogram.types import (
 def start_pannel():
     buttons = [
         [
-            InlineKeyboardButton(text=f"My Home🔥", url=f"https://t.me/{SUPPORT_GROUP}"),
+            InlineKeyboardButton(text=f"Support🔥", url=f"https://t.me/{SUPPORT_GROUP}"),
             InlineKeyboardButton(text=f"Channel🔥", url=f"https://t.me/{UPDATES_CHANNEL}"),
         ],
         [
-            InlineKeyboardButton("🔥OWNER🔥", url=f"https://t.me/userderdead"),
+            InlineKeyboardButton("🔥 Dev's🔥", url=f"https://t.me/akkudevs"),
             InlineKeyboardButton("🔥Commands", url=f"https://telegra.ph/Commands-12-20"),
         ],
     ]
@@ -65,11 +65,11 @@ async def welcome(_, message: Message):
         try:
             if member.id in OWNER:
                 return await message.reply_text(
-                    f"💡 Owner Bot [{member.mention}] Boom boom owner."
+                    f"♥️OWNER JOINED [{member.mention}] Hello Sir."
                 )
             if member.id in SUDOERS:
                 return await message.reply_text(
-                    f"💡 Admin Bot [{member.mention}] Boom boom sudo."
+                    f"👿 Demon Joined [{member.mention}] Hello Sudo."
                 )
             if member.id == ASSID:
                 await remove_active_chat(chat_id)
@@ -103,7 +103,7 @@ async def start(_, message: Message):
 Here {message.chat.title}.
 Thanks Of Using.
 
-For assistance please click the button below.
+For All Commands Start Me.
 """,
         reply_markup=InlineKeyboardMarkup(out[1]),
         disable_web_page_preview=True
@@ -120,11 +120,11 @@ async def play(_, message: Message):
         await app.send_message(
             message.chat.id,
             text=f"""
-**✨ Welcome {rpk}!
+**ℹ️ Welcome {rpk}!
 
 💬 [{BOT_NAME}](t.me/{BOT_USERNAME}) Simple Music Player Bot Telegram!
 
-💡 Helper Commands » 📚 https://telegra.ph/Commands-12-20 !**
+💡 Helper Commands » 📚 /play songname /skip skip the current song /end stop all songs !**
 
 """,
             parse_mode="markdown",
@@ -170,7 +170,7 @@ async def play(_, message: Message):
             )
         if str(finxx) == "sud":
             sudoers = await get_sudoers()
-            text = "**📝 SUDO USER LIST**\n\n"
+            text = "**📝 DENON USER LIST**\n\n"
             for count, user_id in enumerate(sudoers, 1):
                 try:
                     user = await app.get_users(user_id)
