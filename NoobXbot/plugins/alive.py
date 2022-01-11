@@ -43,4 +43,4 @@ async def alive(client, message):
       **Bot : 0.7 Jan Update**
       **My Master : [{OWNER_USERNAME}](https://t.me/userderdead})**
       **Service Time : `{uptime}`
-      **Thanks For Using Me Dude🎵**"",
+      **Thanks For Using Me Dude 🎵**"",
