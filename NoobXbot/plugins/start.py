@@ -76,8 +76,8 @@ async def welcome(_, message: Message):
             if member.id == BOT_ID:
                 out = start_pannel()
                 await message.reply_text(
-                    f"My Assistant I'd Joined The Group"
-                )
+                    f"""
+                
 👋 ** Thanks For Starting Me**
 
 💡 **Take Me To Your Group**
