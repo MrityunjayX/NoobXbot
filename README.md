@@ -6,7 +6,7 @@
 </p>
 
 ### DEPLOY TO HEROKU TOD!
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Mrityunjay X/NoobXbot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MrityunjayX/NoobXbot)
 
 ### GENARATE STRING
 Get pyrogram (p)  `SESSION` from here:
