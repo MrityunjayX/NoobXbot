@@ -33,7 +33,7 @@ def start_pannel():
             InlineKeyboardButton("🔥 Dev's🔥", url=f"https://t.me/akkudevs"),
             InlineKeyboardButton("🔥Commands", url=f"https://telegra.ph/Commands-12-20"),
         ],
-    ]
+              ]
     return (
         "🎛 **{BOT_NAME} I'm NoobXbot**",
         buttons,
@@ -161,7 +161,7 @@ async def play(_, message: Message):
             link = x["webpage_url"]
             buttons = personal_markup(link)
             userid = message.from_user.id
-            thumb = await down_thumb(thumbnail, userid)
+            thumb = await down_thumb(thumbnail, user.id)
             await app.send_photo(
                 message.chat.id,
                 photo=thumb,
@@ -174,7 +174,7 @@ async def play(_, message: Message):
             text = "**📝 DENON USER LIST**\n\n"
             for count, user_id in enumerate(sudoers, 1):
                 try:
-                    user = await app.get_users(user_id)
+                    user = await app.get_users(user.id)
                     user = user.first_name if not user.mention else user.mention
                 except Exception:
                     continue
